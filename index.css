@@ -53,23 +53,7 @@ footer {
   color:#8CAAEE;
 }
 
-.twitch:hover {
-  color: #772ce8;
-}
-
-.youtube:hover {
-  color: #ff0000;
-}
-
-.twitter:hover {
-  color: #1a8cd8;
-}
-
-.instagram:hover {
-  color: #f5006f;
-}
-
-.github:hover {
+.contact:hover {
   color: #a6d189;
 }
 
@@ -89,7 +73,7 @@ footer {
 
 .typeme {
   width: 30ch;
-  animation: typing 2s steps(25), blink .5s step-end infinite alternate;
+  animation: typing 2s steps(26), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 10px solid #f2d5cf;
