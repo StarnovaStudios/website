@@ -61,6 +61,10 @@ footer {
   color: #a6d189;
 }
 
+.projects:hover {
+  color: #a6d189;
+}
+
 .charm:hover {
   color: #ff6dff;
 }
