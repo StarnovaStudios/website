@@ -12,7 +12,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 * {
-  background: #303446;
+  background: #6e738d;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 500;
   color: #c6d0f5;
@@ -54,6 +54,10 @@ footer {
 }
 
 .contact:hover {
+  color: #a6d189;
+}
+
+.team:hover {
   color: #a6d189;
 }
 
