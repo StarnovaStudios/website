@@ -1,35 +1,72 @@
-var cursor = document.querySelector('.cursor');
-var cursorinner = document.querySelector('.cursor2');
-var a = document.querySelectorAll('a');
 
-document.addEventListener('mousemove', function(e){
-  var x = e.clientX;
-  var y = e.clientY;
-  cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
-});
 
-document.addEventListener('mousemove', function(e){
-  var x = e.clientX;
-  var y = e.clientY;
-  cursorinner.style.left = x + 'px';
-  cursorinner.style.top = y + 'px';
-});
+/* Please ❤ this if you like it! */
 
-document.addEventListener('mousedown', function(){
-  cursor.classList.add('click');
-  cursorinner.classList.add('cursorinnerhover')
-});
 
-document.addEventListener('mouseup', function(){
-  cursor.classList.remove('click')
-  cursorinner.classList.remove('cursorinnerhover')
-});
+(function($) { "use strict";
+		
+	//Page cursors
 
-a.forEach(item => {
-  item.addEventListener('mouseover', () => {
-    cursor.classList.add('hover');
-  });
-  item.addEventListener('mouseleave', () => {
-    cursor.classList.remove('hover');
-  });
-})
+    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px", 
+		t.style.top = n.clientY + "px", 
+		e.style.left = n.clientX + "px", 
+		e.style.top = n.clientY + "px", 
+		i.style.left = n.clientX + "px", 
+		i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+    function n(t) {
+        e.classList.add("hover"), i.classList.add("hover")
+    }
+    function s(t) {
+        e.classList.remove("hover"), i.classList.remove("hover")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+	
+	//Navigation
+
+	var app = function () {
+		var body = undefined;
+		var menu = undefined;
+		var menuItems = undefined;
+		var init = function init() {
+			body = document.querySelector('body');
+			menu = document.querySelector('.menu-icon');
+			menuItems = document.querySelectorAll('.nav__list-item');
+			applyListeners();
+		};
+		var applyListeners = function applyListeners() {
+			menu.addEventListener('click', function () {
+				return toggleClass(body, 'nav-active');
+			});
+		};
+		var toggleClass = function toggleClass(element, stringClass) {
+			if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+		};
+		init();
+	}();
+
+	
+	//Switch light/dark
+	
+	$("#switch").on('click', function () {
+		if ($("body").hasClass("light")) {
+			$("body").removeClass("light");
+			$("#switch").removeClass("switched");
+		}
+		else {
+			$("body").addClass("light");
+			$("#switch").addClass("switched");
+		}
+	});
+	
+})(jQuery); 
