@@ -85,11 +85,11 @@ footer {
 }
 
 .typeme {
-  width: 30ch;
+  width: 28ch;
   animation: typing 2s steps(24), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 10px solid #f2d5cf;
+  border-right: 8px solid #f2d5cf;
 }
 
 /* animation */
