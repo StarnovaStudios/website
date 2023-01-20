@@ -74,6 +74,16 @@ footer {
   color: #ff6dff;
 }
 
+.cursor {
+  color: #f2d5cf;
+}
+
+.output {
+  width: 100%;
+  max-width: 80ch;
+  animation: fade 5s;
+}
+
 .typeme {
   width: 30ch;
   animation: typing 2s steps(24), blink .5s step-end infinite alternate;
