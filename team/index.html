@@ -106,6 +106,19 @@
     }
     </style>
     
+    <!-- Service Worker -->
+    
+    <script>
+      window.addEventListener('load', () => {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js').then(() => {
+          }).catch((error) => {
+            console.log('Failed to load Service Worker');
+          });
+        }
+      });
+    </script>
+    
 </head>
 <body>
     <div class="typeme"><span class="text-secondary">team@starnova-studios </span><span class="text-background">~ </span><span class="cursor">$ </span>ls</div>
