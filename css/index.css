@@ -102,7 +102,7 @@ footer {
 
 @keyframes typing {
   0% { width: 0; }
-  100% { width: 30ch; }
+  100% { width: 28ch; }
 }
     
 @keyframes blink {
