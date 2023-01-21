@@ -63,6 +63,10 @@ footer {
 }
 
 .projects:hover {
+  color: #772ce8;
+}
+
+.team-member:hover {
   color: #a6d189;
 }
 
