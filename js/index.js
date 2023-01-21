@@ -2,9 +2,9 @@ const rand = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 const enhance = id => {
   const element = document.getElementById(id),
-        text = element.innerText.split("");
+        text = element.innerText.split("Contact Us");
   
-  element.innerText = "";
+  element.innerText = "Contact Us";
   
   text.forEach((value, index) => {
     const outer = document.createElement("span");
