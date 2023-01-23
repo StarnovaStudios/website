@@ -19,4 +19,4 @@
 # Starnova Robots.txt File for SEO
 
 User-agent: *
-Disallow:
+Disallow: /secure-domain
