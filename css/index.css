@@ -86,12 +86,12 @@ footer {
 .output {
   width: 100%;
   max-width: 80ch;
-  animation: fade 5s;
+  animation: fade 3.5s;
 }
 
 .typeme {
   width: 28ch;
-  animation: typing 2s steps(24), blink .5s step-end infinite alternate;
+  animation: typing 1.5s steps(28), blink .35s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 8px solid #f2d5cf;
