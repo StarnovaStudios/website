@@ -96,6 +96,15 @@ footer {
   border-right: 8px solid #f2d5cf;
 }
 
+/* media hider */
+
+/* Hide the logo image on screens 600px wide or less (common mobile breakpoint) */
+@media (max-width: 600px) {
+  img[alt="terminal"] {
+    display: none !important;
+  }
+}
+
 /* animation */
 
 @keyframes fade {
